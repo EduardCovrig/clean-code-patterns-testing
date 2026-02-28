@@ -1,0 +1,16 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+gen/
+
+# macOS system files
+.DS_Store
+
+# Java compiled files
+*.class
+
+# Build tools
+target/
+.gradle/
+build/
