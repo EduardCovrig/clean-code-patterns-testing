@@ -1,0 +1,28 @@
+Bilet 1 - Cafenea
+Cerințe obligatorii
+Pattern-urile implementate trebuie sa respecte definiția din GoF discutată în cadrul cursurilor și laboratoarelor. Nu sunt acceptate variații sau implementări incomplete.
+Pattern-ul trebuie implementat corect în totalitate pentru a fi luat în calcul.
+Soluția nu conține erori de compilare.
+Pattern-urile pot fi tratate distinct sau pot fi implementate pe același set de clase.
+Implementările care nu au legătura funcțională cu cerințele din subiect NU vor fi luate în calcul (preluare unui exemplu din alte surse nu va fi punctată).
+NU este permisă modificare claselor/interfetelor primite.
+Soluțiile vor fi verificate încrucișat folosind MOSS. Nu este permisă partajarea de cod între studenți. Soluțiile care au un grad de similitudine mai mare de 30% vor fi anulate.
+
+Cerințe Clean Code obligatorii (soluția este depunctata cu câte 2 puncte pentru fiecare cerința ce nu este respectată) - maxim se pot pierde 4 puncte
+Pentru denumirea claselor, funcțiilor, testelor unitare, atributelor și a variabilelor se respecta convenția de nume de tip Java Mix CamelCase.
+Pattern-urile și clasa ce conține metoda main() sunt definite in pachete distincte ce au forma cts.nume.prenume.gGrupa.pattern.model, cts.nume.prenume.Grupa.pattern.main (studenții din anul suplimentar trec “as” în loc de gGrupa.
+Clasele și metodele sunt implementate respectând principiile KISS, DRY și SOLID (atenție la DIP)
+Denumirile de clase, metode, variabile, precum și mesajele afișate la consola trebuie sa aibă legătura cu subiectul primit (nu sunt acceptate denumiri generice). Funcțional, metodele vor afișa mesaje la consola care sa simuleze acțiunea cerută sau vor implementa prelucrări simple.
+
+Se dezvoltă o aplicație software destinată unei cafenele.
+4p. Se dorește dezvoltarea unei aplicații pentru o cafenea care să permită gestionarea comenzilor online. Sistemul trebuie să ofere o evidență clară a comenzilor plasate. Sistemul trebuie să permită crearea diferitelor tipuri de băuturi: Cafea, Ceai, Ciocolată caldă. Acestea vor implementa interfata Bautura.
+Fiecare tip de băutură va avea:
+un nume
+un volum (în mililitri)
+un preț
+o metodă de preparare specific băuturii în care sunt afisați pași parcursi pentru preparare
+Crearea băuturilor trebuie separată de logica principală a aplicației.
+1p. Să se testeze soluția prin crearea a cel puțin patru obiecte de tipul Bautura si utilizarea acestora.
+
+3p.Cafeneaua are o singura casa de marcat. Astfel sistemul va avea o componentă centrală care gestionează comanda clientilor. Această componentă de gestionare trebuie să fie unic accesibilă în toată aplicația și să nu permită instanțierea multiplă. In cadrul componentei nou adaugate se permite adăugarea de băuturi pentru o comanda si oferă posibilitatea de a afișa toate bauturile din ultima comanda precum si posibilitatea de a calcula prețul total al comenzii. Trebuie folosita interfata ComandaManager, iar pentru bauturi interfata Bautura.
+1p. Simulați plasarea a cel putin două comenzi prin care sa aratati ca nu pot fi realizate doua comenzi concomitent. Insa in cadrul unei comenzi pot fi adaugate bauturi similare.

@@ -1,0 +1,8 @@
+package cerinta9_2026_joi.cts.covrig.eduard.gabriel.g1087.FactoryMethod;
+
+public class DirectHrApplication extends AbstractApplication{
+    DirectHrApplication()
+    {
+        this.applicationType="HR";
+    }
+}
